@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page introuvable &ndash; Jade de Chine</title>
+  <meta name="description" content="La page demand&eacute;e n'existe pas ou a &eacute;t&eacute; d&eacute;plac&eacute;e.">
+  <meta name="author" content="Harrison NGUYEN &amp; Harry NGUYEN">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Jade de Chine">
+  <meta property="og:title" content="Page introuvable &ndash; Jade de Chine">
+  <meta property="og:description" content="La page demand&eacute;e n'existe pas ou a &eacute;t&eacute; d&eacute;plac&eacute;e.">
+  <meta property="og:image" content="https://www.jadedechine.be/Images/Accueil.jpg">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#ba6436">
+  <link rel="icon" type="image/svg+xml" href="/Images/JadeMons3.svg">
+  <link rel="preload" href="/Font/CHOWFUN_.TTF" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <script>
+    /* Appliqué avant l'affichage pour éviter le « flash » du mauvais thème */
+    document.documentElement.classList.add("js");
+    try { if (sessionStorage.getItem("Theme") === "light") document.documentElement.classList.add("light"); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- Barre de navigation (identique sur toutes les pages) -->
+  <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+    <div class="site-nav__inner">
+      <a class="site-nav__brand" href="/" aria-label="Jade de Chine – Accueil">
+        <img src="/Images/JadeMons3.svg" alt="" width="40" height="40">
+      </a>
+      <button class="site-nav__toggle" type="button" aria-expanded="false" aria-controls="site-nav-menu" aria-label="Ouvrir le menu">
+        <svg viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>
+      </button>
+      <ul class="site-nav__menu" id="site-nav-menu">
+        <li><a class="site-nav__link" href="/">Accueil</a></li>
+        <li><a class="site-nav__link" href="/Carte/">Carte</a></li>
+        <li><a class="site-nav__link" href="/Galerie/">Galerie</a></li>
+        <li><a class="site-nav__link" href="#Contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Passer au thème clair" aria-pressed="false">
+            <svg class="ico-moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/><path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/></svg>
+            <svg class="ico-sun" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="contenu">
+    <header class="hero hero--full">
+      <img class="hero__img" src="/Images/Galerie/Header.jpg" alt="">
+      <div class="hero__content">
+        <p class="error-code" aria-hidden="true">404</p>
+        <h1 class="hero__title">Oups !</h1>
+        <p class="hero__subtitle">La page que vous recherchez n'existe pas ou a été déplacée.</p>
+        <div class="error-actions">
+          <a class="btn" href="/">Retour à l'accueil</a>
+          <!-- <a class="btn" href="/Carte/">Voir la carte</a>
+          <a class="btn btn--secondary" href="#Contact">Nous contacter</a> -->
+        </div>
+      </div>
+    </header>
+  </main>
+
+  <!-- Pied de page (identique sur toutes les pages) -->
+  <footer class="site-footer" id="Contact">
+    <div class="container">
+      <div class="footer-cols">
+        <section>
+          <h2 class="footer-title">Adresse</h2>
+          <address>
+            Dans le centre-ville,<br>
+            <a href="https://www.google.com/maps/search/?api=1&amp;query=Jade+de+Chine+82+Rue+d%27Havr%C3%A9+7000+Mons" target="_blank" rel="noopener">82-84 Rue d'Havré<br>7000 Mons</a>
+          </address>
+        </section>
+
+        <section>
+          <h2 class="footer-title">Réservations</h2>
+          <p>Nous vous invitons à prendre contact au :<br>
+            <a href="tel:+3265336110">065/33.61.10</a></p>
+        </section>
+
+        <section class="footer-cols__hours">
+          <h2 class="footer-title">Horaires d'ouverture</h2>
+          <table class="hours">
+            <caption class="sr-only">Horaires d'ouverture</caption>
+            <tbody>
+              <tr data-day="1"><th scope="row">Lundi</th><td>Fermé</td></tr>
+              <tr data-day="2"><th scope="row">Mardi</th><td>12h-14h, 18h-21h</td></tr>
+              <tr data-day="3"><th scope="row">Mercredi</th><td>12h-14h, 18h-21h</td></tr>
+              <tr data-day="4"><th scope="row">Jeudi</th><td>12h-14h, 18h-21h</td></tr>
+              <tr data-day="5"><th scope="row">Vendredi</th><td>12h-14h, 18h-22h</td></tr>
+              <tr data-day="6"><th scope="row">Samedi</th><td>12h-14h, 18h-22h</td></tr>
+              <tr data-day="0"><th scope="row">Dimanche</th><td>12h-14h</td></tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+
+      <nav aria-label="Pied de page">
+        <ul class="footer-nav">
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/Carte/">Carte</a></li>
+          <li><a href="/Galerie/">Galerie</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-social">
+        <a href="https://www.facebook.com/lejadedechine/?locale=fr_FR" target="_blank" rel="noopener">
+          Suivez-nous sur Facebook !
+          <img src="/Images/Facebook.svg" alt="" width="30" height="30">
+        </a>
+      </div>
+
+      <div class="footer-legal">
+        <p>&copy; <span data-year>2025</span> Jade de Chine. Tous droits réservés. Siège social : SRL Jade d'Orient - rue d'Havré 82-84 7000 Mons - TVA : 0437918079.</p>
+        <p><a href="/Politique-Cookies/">Politique de cookies 🍪</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bandeau cookies -->
+  <div class="cookie-banner" id="cookie-banner" role="region" aria-label="Information cookies" hidden>
+    <p>Ce site web utilise des cookies fonctionnels qui sont nécessaires au bon fonctionnement du site internet. 🍪</p>
+    <a href="/Politique-Cookies/">En savoir plus.</a>
+    <br>
+    <button class="btn btn--secondary" type="button" data-cookie-ok>Ok j'ai compris.</button>
+  </div>
+
+  <script src="/JS/main.js"></script>
+  <script src="/JS/annonces.js"></script>
+</body>
+</html>
